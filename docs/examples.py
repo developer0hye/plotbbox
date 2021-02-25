@@ -1,5 +1,5 @@
 import cv2
-from pybbox import plotBBox
+from plotbbox import plotBBox
 
 import os
 

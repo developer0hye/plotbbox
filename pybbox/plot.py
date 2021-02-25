@@ -3,9 +3,9 @@ import numpy as np
 import cv2
 from PIL import ImageFont
 
+__all__ = ["plotBBox"]
 
 TTF_FILE_DIR = os.path.join(os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__))), "Ubuntu-Regular.ttf")
-
 
 def generate_label_img(label : str, font : ImageFont.FreeTypeFont, text_color=(0, 0, 0), background_color=(255, 255, 255)):
     label_img = font.getmask(label)

@@ -8,7 +8,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="plotbbox", # Replace with your own username
-    version="0.0.1",
+    version="0.0.4",
     author="Yonghye Kwon",
     author_email="developer.0hye@gmail.com",
     description="A package to draw pretty bounding boxes for object detection task",
@@ -18,6 +18,7 @@ setuptools.setup(
     keywords=["object-detection", "bounding-box", "bbox", "box"],
     install_requires=["numpy", "opencv-python", "Pillow"],
     packages=setuptools.find_packages(exclude = ['docs']),
+    include_package_data=True,
     classifiers=[
         "Programming Language :: Python :: 3",
         "Topic :: Software Development :: Libraries",

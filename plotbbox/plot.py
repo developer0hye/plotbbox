@@ -73,9 +73,9 @@ def plotBBox(img: np.ndarray,
         pasted_label_img_h = label_ymax - label_ymin
         pasted_label_img_w = label_xmax - label_xmin
         
-        assert pasted_label_img_w > 0 and pasted_label_img_h > 0
-        
-        if (label_img_h, label_img_w) != (pasted_label_img_h, pasted_label_img_w):
-            label_img = cv2.resize(label_img, dsize=(pasted_label_img_h, pasted_label_img_w))
+        if pasted_label_img_w > 0 and pasted_label_img_h > 0:
+            
+            if (label_img_h, label_img_w) != (pasted_label_img_h, pasted_label_img_w):
+                label_img = cv2.resize(label_img, dsize=(pasted_label_img_w, pasted_label_img_h))
 
-        img[label_ymin:label_ymax, label_xmin:label_xmax] = label_img
+            img[label_ymin:label_ymax, label_xmin:label_xmax] = label_img

@@ -15,7 +15,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/developer0hye/plotbbox",
-    keywords=["object-detection", "bounding-box", "box"],
+    keywords=["object-detection", "bounding-box", "bbox", "box"],
     install_requires=["numpy", "opencv-python", "Pillow"],
     packages=setuptools.find_packages(exclude = ['docs']),
     classifiers=[

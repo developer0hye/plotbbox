@@ -7,14 +7,14 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="pybbox", # Replace with your own username
+    name="plotbbox", # Replace with your own username
     version="0.0.1",
     author="Yonghye Kwon",
     author_email="developer.0hye@gmail.com",
     description="A package to draw pretty bounding boxes for object detection task",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/developer0hye/pybbox",
+    url="https://github.com/developer0hye/plotbbox",
     keywords=["object-detection", "bounding-box", "box"],
     install_requires=["numpy", "opencv-python", "Pillow"],
     packages=setuptools.find_packages(exclude = ['docs']),

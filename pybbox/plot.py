@@ -1,7 +1,8 @@
-import os
 import numpy as np
 import cv2
 from PIL import ImageFont
+
+import os
 
 __all__ = ["plotBBox"]
 

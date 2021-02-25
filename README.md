@@ -1,2 +1,2 @@
-# pybbox
-A package to draw pretty bounding boxes for object detection task
+# plotBBox
+A package to plot pretty bounding boxes for object detection task

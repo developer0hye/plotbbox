@@ -1,9 +1,7 @@
 # plotbbox
 A package to plot pretty bounding boxes for object detection task
 
-
-
-
+<img src="./figures/figure_1_examples.png" width="50%">
 
 # Install
 ```python
@@ -19,7 +17,7 @@ from plotbbox import plotBBox
 img = cv2.imread("your_img.png")
 
 label_table = {0: "person", 1: "car"}
-color_table = {0: (0, 255, 0), 1: (0, 0, 255)} # order: b, g, r
+color_table = {0: [0, 255, 0], 1: [0, 0, 255]} # order: b, g, r
 
 bboxes = your_detection_algorithm(img) # Shape: (N, 5), [:, 0]: class index, [:, 1:]: xmin, ymin, xmax, ymax
 

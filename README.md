@@ -1,7 +1,7 @@
 # plotbbox
 A package to plot pretty bounding boxes for object detection task
 
-<p align="center"><img src="./figures/figure_1_examples.png" width="85%"></p>
+<p align="center"><img src="https://github.com/developer0hye/plotbbox/blob/main/figures/figure_1_examples.png" width="85%"></p>
 
 # Install
 ```python

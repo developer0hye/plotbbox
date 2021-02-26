@@ -28,7 +28,9 @@ for bbox in bboxes:
   class_idx = bbox[0]
   xmin, ymin, xmax, ymax = bbox[1:]
 
-  plotBBox(img, xmin, ymin, xmax, ymax, color=color_table[class_idx], thickness=1, label=label_table[class_idx]) # plot bounding box on img
+  plotBBox(img, 
+           xmin, ymin, xmax, ymax, color=color_table[class_idx], thickness=1, 
+           label=label_table[class_idx]) # plot bounding box on img
 
 cv2.imwrite("bboxes_plotted_your_img.png", img)
 ```

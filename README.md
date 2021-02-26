@@ -34,4 +34,4 @@ for bbox in bboxes:
 
 cv2.imwrite("bboxes_plotted_your_img.png", img)
 ```
-For more detail, read [docs/example.py](https://github.com/developer0hye/plotbbox/blob/main/docs/example.py) and run!
+Read [docs/example.py](https://github.com/developer0hye/plotbbox/blob/main/docs/example.py) and run for more details!

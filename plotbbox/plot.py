@@ -27,7 +27,7 @@ def generate_label_img(label : str, font : ImageFont.FreeTypeFont, text_color=(0
     return num_img
     
 def plotBBox(img: np.ndarray, 
-             xmin: int, ymin: int, xmax: int, ymax: int, color: tuple=(0, 255, 0), thickness: int=1,
+             xmin: int, ymin: int, xmax: int, ymax: int, color: list=[0, 255, 0], thickness: int=1,
              label: str="", font_path: str=TTF_FILE_DIR, font_scale: int=15):
     
     assert type(img) == np.ndarray
@@ -39,8 +39,8 @@ def plotBBox(img: np.ndarray,
     assert type(xmax) == int
     assert type(ymax) == int
 
-    assert type(color) == tuple
     assert len(color) == 1 or len(color) == 3
+    assert type(color) == list or type(color) == tuple
     assert all(isinstance(color[i], int) for i in range(len(color)))
     
     assert type(thickness) == int       
@@ -79,3 +79,4 @@ def plotBBox(img: np.ndarray,
                 label_img = cv2.resize(label_img, dsize=(pasted_label_img_w, pasted_label_img_h))
 
             img[label_ymin:label_ymax, label_xmin:label_xmax] = label_img
+            

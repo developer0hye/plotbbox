@@ -8,10 +8,10 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="plotbbox", # Replace with your own username
-    version="0.0.5",
+    version="0.0.6",
     author="Yonghye Kwon",
     author_email="developer.0hye@gmail.com",
-    description="A package to draw pretty bounding boxes for object detection task",
+    description="A package to plot pretty bounding boxes for object detection task",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/developer0hye/plotbbox",
